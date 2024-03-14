@@ -3,8 +3,8 @@ package keeper
 import (
 	"context"
 
-	v4 "cosmossdk.io/x/distribution/migrations/v4"
-	"cosmossdk.io/x/distribution/types"
+	v4 "github.com/andromedaprotocol/cosmos-sdk/x/distribution/migrations/v4"
+	"github.com/andromedaprotocol/cosmos-sdk/x/distribution/types"
 )
 
 // Migrator is a struct for handling in-place store migrations.

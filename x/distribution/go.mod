@@ -1,4 +1,4 @@
-module cosmossdk.io/x/distribution
+module github.com/andromedaprotocol/cosmos-sdk/x/distribution
 
 go 1.21
 

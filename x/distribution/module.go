@@ -11,10 +11,10 @@ import (
 
 	"cosmossdk.io/core/appmodule"
 	"cosmossdk.io/core/registry"
-	"cosmossdk.io/x/distribution/client/cli"
-	"cosmossdk.io/x/distribution/keeper"
-	"cosmossdk.io/x/distribution/simulation"
-	"cosmossdk.io/x/distribution/types"
+	"github.com/andromedaprotocol/cosmos-sdk/x/distribution/client/cli"
+	"github.com/andromedaprotocol/cosmos-sdk/x/distribution/keeper"
+	"github.com/andromedaprotocol/cosmos-sdk/x/distribution/simulation"
+	"github.com/andromedaprotocol/cosmos-sdk/x/distribution/types"
 
 	sdkclient "github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/codec"

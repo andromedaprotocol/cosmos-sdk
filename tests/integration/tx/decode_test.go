@@ -17,7 +17,6 @@ import (
 	"cosmossdk.io/x/auth/vesting"
 	authzmodule "cosmossdk.io/x/authz/module"
 	"cosmossdk.io/x/bank"
-	"cosmossdk.io/x/distribution"
 	"cosmossdk.io/x/evidence"
 	feegrantmodule "cosmossdk.io/x/feegrant/module"
 	"cosmossdk.io/x/gov"
@@ -28,6 +27,7 @@ import (
 	"cosmossdk.io/x/tx/decode"
 	txsigning "cosmossdk.io/x/tx/signing"
 	"cosmossdk.io/x/upgrade"
+	"github.com/andromedaprotocol/cosmos-sdk/x/distribution"
 
 	"github.com/cosmos/cosmos-sdk/codec/legacy"
 	codectestutil "github.com/cosmos/cosmos-sdk/codec/testutil"

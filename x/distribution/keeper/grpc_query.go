@@ -8,7 +8,7 @@ import (
 
 	"cosmossdk.io/collections"
 	"cosmossdk.io/errors"
-	"cosmossdk.io/x/distribution/types"
+	"github.com/andromedaprotocol/cosmos-sdk/x/distribution/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/query"

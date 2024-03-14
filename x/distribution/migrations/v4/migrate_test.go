@@ -9,8 +9,8 @@ import (
 	collcodec "cosmossdk.io/collections/codec"
 	"cosmossdk.io/log"
 	storetypes "cosmossdk.io/store/types"
-	"cosmossdk.io/x/distribution"
-	v4 "cosmossdk.io/x/distribution/migrations/v4"
+	"github.com/andromedaprotocol/cosmos-sdk/x/distribution"
+	v4 "github.com/andromedaprotocol/cosmos-sdk/x/distribution/migrations/v4"
 
 	codectestutil "github.com/cosmos/cosmos-sdk/codec/testutil"
 	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"

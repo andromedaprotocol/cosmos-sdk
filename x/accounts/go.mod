@@ -171,7 +171,7 @@ replace (
 	cosmossdk.io/depinject => ../../depinject
 	cosmossdk.io/x/auth => ../auth
 	cosmossdk.io/x/bank => ../bank
-	cosmossdk.io/x/distribution => ../distribution
+	github.com/andromedaprotocol/cosmos-sdk/x/distribution => ../distribution
 	cosmossdk.io/x/mint => ../mint
 	cosmossdk.io/x/slashing => ../slashing
 	cosmossdk.io/x/staking => ../staking

@@ -19,8 +19,6 @@ import (
 	authkeeper "cosmossdk.io/x/auth/keeper"
 	bankkeeper "cosmossdk.io/x/bank/keeper"
 	banktestutil "cosmossdk.io/x/bank/testutil"
-	distributionkeeper "cosmossdk.io/x/distribution/keeper"
-	distrtypes "cosmossdk.io/x/distribution/types"
 	mintkeeper "cosmossdk.io/x/mint/keeper"
 	minttypes "cosmossdk.io/x/mint/types"
 	slashingkeeper "cosmossdk.io/x/slashing/keeper"
@@ -28,6 +26,8 @@ import (
 	"cosmossdk.io/x/slashing/types"
 	stakingkeeper "cosmossdk.io/x/staking/keeper"
 	stakingtypes "cosmossdk.io/x/staking/types"
+	distributionkeeper "github.com/andromedaprotocol/cosmos-sdk/x/distribution/keeper"
+	distrtypes "github.com/andromedaprotocol/cosmos-sdk/x/distribution/types"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/codec"

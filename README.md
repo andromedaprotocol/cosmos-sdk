@@ -90,7 +90,7 @@ Module Dependencies are the modules that a application may depend on and which v
 | cosmossdk.io/x/bank         | ❌         |       |
 | cosmossdk.io/x/circuit      | 0.1.z     |       |
 | cosmossdk.io/x/consensus    | ❌         |       |
-| cosmossdk.io/x/distribution | ❌         |       |
+| github.com/andromedaprotocol/cosmos-sdk/x/distribution | ❌         |       |
 | cosmossdk.io/x/evidence     | 0.1.z     |       |
 | cosmossdk.io/x/feegrant     | 0.1.z     |       |
 | cosmossdk.io/x/gov          | ❌         |       |

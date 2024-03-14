@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	"cosmossdk.io/math"
-	"cosmossdk.io/x/distribution/keeper"
 	stakingtypes "cosmossdk.io/x/staking/types"
+	"github.com/andromedaprotocol/cosmos-sdk/x/distribution/keeper"
 
 	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"

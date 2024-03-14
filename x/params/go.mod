@@ -175,7 +175,7 @@ replace (
 	cosmossdk.io/x/accounts => ../accounts
 	cosmossdk.io/x/auth => ../auth
 	cosmossdk.io/x/bank => ../bank
-	cosmossdk.io/x/distribution => ../distribution
+	github.com/andromedaprotocol/cosmos-sdk/x/distribution => ../distribution
 	cosmossdk.io/x/gov => ../gov
 	cosmossdk.io/x/mint => ../mint
 	cosmossdk.io/x/protocolpool => ../protocolpool

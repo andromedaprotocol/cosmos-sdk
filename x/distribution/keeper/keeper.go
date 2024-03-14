@@ -12,7 +12,7 @@ import (
 	"cosmossdk.io/core/event"
 	errorsmod "cosmossdk.io/errors"
 	"cosmossdk.io/log"
-	"cosmossdk.io/x/distribution/types"
+	"github.com/andromedaprotocol/cosmos-sdk/x/distribution/types"
 
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"

@@ -33,7 +33,6 @@ import (
 	vestingtypes "cosmossdk.io/x/auth/vesting/types"
 	authztypes "cosmossdk.io/x/authz"
 	banktypes "cosmossdk.io/x/bank/types"
-	disttypes "cosmossdk.io/x/distribution/types"
 	evidencetypes "cosmossdk.io/x/evidence/types"
 	feegranttypes "cosmossdk.io/x/feegrant"
 	gov_v1_types "cosmossdk.io/x/gov/types/v1"
@@ -43,6 +42,7 @@ import (
 	slashingtypes "cosmossdk.io/x/slashing/types"
 	stakingtypes "cosmossdk.io/x/staking/types"
 	upgradetypes "cosmossdk.io/x/upgrade/types"
+	disttypes "github.com/andromedaprotocol/cosmos-sdk/x/distribution/types"
 
 	"github.com/cosmos/cosmos-sdk/crypto/keys/multisig"
 	consensustypes "github.com/cosmos/cosmos-sdk/x/consensus/types"

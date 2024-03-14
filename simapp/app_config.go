@@ -38,8 +38,6 @@ import (
 	banktypes "cosmossdk.io/x/bank/types"
 	_ "cosmossdk.io/x/circuit" // import for side-effects
 	circuittypes "cosmossdk.io/x/circuit/types"
-	_ "cosmossdk.io/x/distribution" // import for side-effects
-	distrtypes "cosmossdk.io/x/distribution/types"
 	_ "cosmossdk.io/x/evidence" // import for side-effects
 	evidencetypes "cosmossdk.io/x/evidence/types"
 	"cosmossdk.io/x/feegrant"
@@ -60,6 +58,8 @@ import (
 	stakingtypes "cosmossdk.io/x/staking/types"
 	_ "cosmossdk.io/x/upgrade" // import for side-effects
 	upgradetypes "cosmossdk.io/x/upgrade/types"
+	_ "github.com/andromedaprotocol/cosmos-sdk/x/distribution" // import for side-effects
+	distrtypes "github.com/andromedaprotocol/cosmos-sdk/x/distribution/types"
 
 	"github.com/cosmos/cosmos-sdk/runtime"
 	_ "github.com/cosmos/cosmos-sdk/x/consensus" // import for side-effects

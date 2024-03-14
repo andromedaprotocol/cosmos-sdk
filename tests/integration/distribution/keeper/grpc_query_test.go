@@ -8,9 +8,9 @@ import (
 
 	"cosmossdk.io/collections"
 	"cosmossdk.io/math"
-	"cosmossdk.io/x/distribution/types"
 	stakingtestutil "cosmossdk.io/x/staking/testutil"
 	stakingtypes "cosmossdk.io/x/staking/types"
+	"github.com/andromedaprotocol/cosmos-sdk/x/distribution/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/query"

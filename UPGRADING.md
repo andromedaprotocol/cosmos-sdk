@@ -218,7 +218,7 @@ Bank was spun out into its own `go.mod`. To import it use `cosmossdk.io/x/bank`
 
 #### `x/distribution`
 
-Distribution was spun out into its own `go.mod`. To import it use `cosmossdk.io/x/distribution`
+Distribution was spun out into its own `go.mod`. To import it use `github.com/andromedaprotocol/cosmos-sdk/x/distribution`
 
 The existing chains using x/distribution module needs to add the new x/protocolpool module.
 

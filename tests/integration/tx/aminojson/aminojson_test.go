@@ -44,8 +44,6 @@ import (
 	authzmodule "cosmossdk.io/x/authz/module"
 	"cosmossdk.io/x/bank"
 	banktypes "cosmossdk.io/x/bank/types"
-	"cosmossdk.io/x/distribution"
-	disttypes "cosmossdk.io/x/distribution/types"
 	"cosmossdk.io/x/evidence"
 	feegrantmodule "cosmossdk.io/x/feegrant/module"
 	"cosmossdk.io/x/gov"
@@ -60,6 +58,8 @@ import (
 	"cosmossdk.io/x/tx/signing/aminojson"
 	signing_testutil "cosmossdk.io/x/tx/signing/testutil"
 	"cosmossdk.io/x/upgrade"
+	"github.com/andromedaprotocol/cosmos-sdk/x/distribution"
+	disttypes "github.com/andromedaprotocol/cosmos-sdk/x/distribution/types"
 
 	codectestutil "github.com/cosmos/cosmos-sdk/codec/testutil"
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"

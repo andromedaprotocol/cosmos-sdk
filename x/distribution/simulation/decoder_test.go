@@ -7,9 +7,9 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"cosmossdk.io/math"
-	"cosmossdk.io/x/distribution"
-	"cosmossdk.io/x/distribution/simulation"
-	"cosmossdk.io/x/distribution/types"
+	"github.com/andromedaprotocol/cosmos-sdk/x/distribution"
+	"github.com/andromedaprotocol/cosmos-sdk/x/distribution/simulation"
+	"github.com/andromedaprotocol/cosmos-sdk/x/distribution/types"
 
 	codectestutil "github.com/cosmos/cosmos-sdk/codec/testutil"
 	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"

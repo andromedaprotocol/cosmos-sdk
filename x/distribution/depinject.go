@@ -6,9 +6,9 @@ import (
 	"cosmossdk.io/depinject"
 	"cosmossdk.io/depinject/appconfig"
 	authtypes "cosmossdk.io/x/auth/types"
-	"cosmossdk.io/x/distribution/keeper"
-	"cosmossdk.io/x/distribution/types"
 	staking "cosmossdk.io/x/staking/types"
+	"github.com/andromedaprotocol/cosmos-sdk/x/distribution/keeper"
+	"github.com/andromedaprotocol/cosmos-sdk/x/distribution/types"
 
 	"github.com/cosmos/cosmos-sdk/codec"
 )

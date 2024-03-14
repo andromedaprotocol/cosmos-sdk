@@ -8,8 +8,8 @@ import (
 
 	"cosmossdk.io/math"
 	authtypes "cosmossdk.io/x/auth/types"
-	"cosmossdk.io/x/distribution/keeper"
-	"cosmossdk.io/x/distribution/types"
+	"github.com/andromedaprotocol/cosmos-sdk/x/distribution/keeper"
+	"github.com/andromedaprotocol/cosmos-sdk/x/distribution/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )

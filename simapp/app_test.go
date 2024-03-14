@@ -22,7 +22,6 @@ import (
 	authzmodule "cosmossdk.io/x/authz/module"
 	"cosmossdk.io/x/bank"
 	banktypes "cosmossdk.io/x/bank/types"
-	"cosmossdk.io/x/distribution"
 	"cosmossdk.io/x/evidence"
 	feegrantmodule "cosmossdk.io/x/feegrant/module"
 	"cosmossdk.io/x/gov"
@@ -32,6 +31,7 @@ import (
 	"cosmossdk.io/x/slashing"
 	"cosmossdk.io/x/staking"
 	"cosmossdk.io/x/upgrade"
+	"github.com/andromedaprotocol/cosmos-sdk/x/distribution"
 
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	"github.com/cosmos/cosmos-sdk/runtime"

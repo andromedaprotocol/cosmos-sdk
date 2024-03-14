@@ -39,7 +39,7 @@ require (
 	cosmossdk.io/x/auth v0.0.0-00010101000000-000000000000
 	cosmossdk.io/x/authz v0.0.0-00010101000000-000000000000
 	cosmossdk.io/x/bank v0.0.0-00010101000000-000000000000
-	cosmossdk.io/x/distribution v0.0.0-20240227221813-a248d05f70f4
+	github.com/andromedaprotocol/cosmos-sdk/x/distribution v0.0.0-20240227221813-a248d05f70f4
 	cosmossdk.io/x/gov v0.0.0-20231113122742-912390d5fc4a
 	cosmossdk.io/x/group v0.0.0-00010101000000-000000000000
 	cosmossdk.io/x/mint v0.0.0-00010101000000-000000000000
@@ -246,7 +246,7 @@ replace (
 	cosmossdk.io/x/authz => ../x/authz
 	cosmossdk.io/x/bank => ../x/bank
 	cosmossdk.io/x/circuit => ../x/circuit
-	cosmossdk.io/x/distribution => ../x/distribution
+	github.com/andromedaprotocol/cosmos-sdk/x/distribution => ../x/distribution
 	cosmossdk.io/x/evidence => ../x/evidence
 	cosmossdk.io/x/feegrant => ../x/feegrant
 	cosmossdk.io/x/gov => ../x/gov

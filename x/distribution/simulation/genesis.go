@@ -6,7 +6,7 @@ import (
 	"math/rand"
 
 	"cosmossdk.io/math"
-	"cosmossdk.io/x/distribution/types"
+	"github.com/andromedaprotocol/cosmos-sdk/x/distribution/types"
 
 	"github.com/cosmos/cosmos-sdk/types/module"
 )
