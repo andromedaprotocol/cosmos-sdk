@@ -14,6 +14,9 @@ const (
 	// ModuleName is the module name constant used in many places
 	ModuleName = "distribution"
 
+	// RewardsDripperName is the module name for the rewards dripper address
+	RewardsDripperName = "rewards_dripper"
+
 	// StoreKey is the store key string for distribution
 	StoreKey = ModuleName
 

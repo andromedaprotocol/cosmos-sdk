@@ -13,6 +13,8 @@ func DefaultParams() Params {
 		BaseProposerReward:  math.LegacyZeroDec(),            // deprecated
 		BonusProposerReward: math.LegacyZeroDec(),            // deprecated
 		WithdrawAddrEnabled: true,
+		// Make initial drip 0%
+		RewardsDrip: math.LegacyZeroDec(), // 0 ANDR per block
 	}
 }
 

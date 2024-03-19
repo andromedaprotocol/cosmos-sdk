@@ -67,6 +67,11 @@ func NewKeeper(
 		panic(fmt.Sprintf("%s module account has not been set", types.ModuleName))
 	}
 
+	// ensure RewardDripper module account is set
+	if addr := ak.GetModuleAddress(types.RewardsDripperName); addr == nil {
+		panic(fmt.Sprintf("%s module account has not been set", types.RewardsDripperName))
+	}
+
 	sb := collections.NewSchemaBuilder(env.KVStoreService)
 	k := Keeper{
 		environment:      env,

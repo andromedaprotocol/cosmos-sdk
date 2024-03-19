@@ -41,6 +41,15 @@ message Params {
   ];
 
   bool withdraw_addr_enabled = 4;
+
+  // RewardsDrip specifies the amount of coins distributed per block to the RewardsDripper module.
+  // The amount is specified as a Dec value that represents the amount of coins distributed per block.
+  string rewards_drip = 5 [
+    (cosmos_proto.scalar)  = "cosmos.Dec",
+    (gogoproto.customtype) = "cosmossdk.io/math.LegacyDec",
+    (gogoproto.nullable)   = false,
+    (amino.dont_omitempty) = true
+  ];
 }
 
 // ValidatorHistoricalRewards represents historical rewards for a validator.

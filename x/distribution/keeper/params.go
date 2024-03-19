@@ -26,3 +26,13 @@ func (k Keeper) GetWithdrawAddrEnabled(ctx context.Context) (enabled bool, err e
 
 	return params.WithdrawAddrEnabled, nil
 }
+
+// Get Param to get the rewards to drip this block
+func (k Keeper) GetRewardsToDrip(ctx context.Context) (math.LegacyDec, error) {
+	params, err := k.Params.Get(ctx)
+	if err != nil {
+		return math.LegacyDec{}, err
+	}
+
+	return params.RewardsDrip, nil
+}

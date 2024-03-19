@@ -45,6 +45,7 @@ func TestAllocateTokensToValidatorWithCommission(t *testing.T) {
 	valCodec := address.NewBech32Codec("cosmosvaloper")
 
 	accountKeeper.EXPECT().GetModuleAddress("distribution").Return(distrAcc.GetAddress())
+	accountKeeper.EXPECT().GetModuleAddress("rewards_dripper").Return(rewardsAcc.GetAddress())
 	stakingKeeper.EXPECT().ValidatorAddressCodec().Return(valCodec).AnyTimes()
 
 	distrKeeper := keeper.NewKeeper(
@@ -102,6 +103,7 @@ func TestAllocateTokensToManyValidators(t *testing.T) {
 
 	feeCollectorAcc := authtypes.NewEmptyModuleAccount("fee_collector")
 	accountKeeper.EXPECT().GetModuleAddress("distribution").Return(distrAcc.GetAddress())
+	accountKeeper.EXPECT().GetModuleAddress("reward_dripper").Return(rewardsAcc.GetAddress())
 	accountKeeper.EXPECT().GetModuleAccount(gomock.Any(), "fee_collector").Return(feeCollectorAcc)
 	stakingKeeper.EXPECT().ValidatorAddressCodec().Return(address.NewBech32Codec("cosmosvaloper")).AnyTimes()
 
@@ -234,6 +236,7 @@ func TestAllocateTokensTruncation(t *testing.T) {
 
 	feeCollectorAcc := authtypes.NewEmptyModuleAccount("fee_collector")
 	accountKeeper.EXPECT().GetModuleAddress("distribution").Return(distrAcc.GetAddress())
+	accountKeeper.EXPECT().GetModuleAddress("reward_dripper").Return(rewardsAcc.GetAddress())
 	accountKeeper.EXPECT().GetModuleAccount(gomock.Any(), "fee_collector").Return(feeCollectorAcc)
 	stakingKeeper.EXPECT().ValidatorAddressCodec().Return(address.NewBech32Codec("cosmosvaloper")).AnyTimes()
 
@@ -313,8 +316,12 @@ func TestAllocateTokensTruncation(t *testing.T) {
 
 	// allocate tokens as if both had voted and second was proposer
 	fees := sdk.NewCoins(sdk.NewCoin(sdk.DefaultBondDenom, math.NewInt(634195840)))
+	// Get rewards to drip from params
+	rewards := sdk.NewCoins(sdk.NewCoin(sdk.DefaultBondDenom, math.NewInt(634195840)))
 	bankKeeper.EXPECT().GetAllBalances(gomock.Any(), feeCollectorAcc.GetAddress()).Return(fees)
+	bankKeeper.EXPECT().GetAllBalances(gomock.Any(), rewardsAcc.GetAddress()).Return(rewards)
 	bankKeeper.EXPECT().SendCoinsFromModuleToModule(gomock.Any(), "fee_collector", disttypes.ModuleName, fees)
+	bankKeeper.EXPECT().SendCoinsFromModuleToModule(gomock.Any(), "rewards_dripper", disttypes.ModuleName, rewards)
 	bankKeeper.EXPECT().SendCoinsFromModuleToModule(gomock.Any(), disttypes.ModuleName, disttypes.ProtocolPoolModuleName, gomock.Any()) // something is sent to community pool
 	poolKeeper.EXPECT().SetToDistribute(ctx, gomock.Any(), gomock.Any())
 

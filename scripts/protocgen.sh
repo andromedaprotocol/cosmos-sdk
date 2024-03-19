@@ -45,7 +45,12 @@ for dir in $proto_dirs; do
     fi
 
     if [ -d "../github.com" -a "$dir" != "./proto" ]; then
-      cp -r ../github.com/cosmos/cosmos-sdk/* $home
+      # If the current directory is distribution, we need to copy the generated files to the root of the project
+      if [ "$dir" = "./x/distribution/proto" ]; then
+        cp -r ../github.com/andromedaprotocol/cosmos-sdk/* $home
+      else
+        cp -r ../github.com/cosmos/cosmos-sdk/* $home
+      fi
       rm -rf ../github.com
     fi
   fi
@@ -54,6 +59,7 @@ for dir in $proto_dirs; do
 done
 
 # move generated files to the right places
+
 cp -r github.com/cosmos/cosmos-sdk/* ./
 rm -rf github.com
 
